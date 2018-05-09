@@ -29,7 +29,7 @@ Be_no = 170 # number of environmental extensions
 # Load serialised data
 #==============================================================================
 
-data = pd.read_pickle("SUTs/V3.3/parsed_SUT_V3.3.pkl") # load pickled data
+data = pd.read_pickle("parsed_SUT_V3.3.pkl") # load pickled data
 
 #==============================================================================
 #  Separated by region

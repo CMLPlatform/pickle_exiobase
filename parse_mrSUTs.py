@@ -19,19 +19,19 @@ from pandas import MultiIndex as mi
 # Load mrSU tables and their extensions
 #==============================================================================
 
-V_ = pd.read_csv("SUTs/V3.3/mrSupply_3.3_2011.txt", sep="\t") #Supply
-U_ = pd.read_csv("SUTs/V3.3/mrUse_3.3_2011.txt", sep="\t") #Use
-Y_ = pd.read_csv("SUTs/V3.3/mrFinalDemand_3.3_2011.txt", sep="\t") # Final demand
-E_ = pd.read_csv("SUTs/V3.3/mrFactorInputs_3.3_2011.txt", sep="\t") # Factor inputs
+V_ = pd.read_csv("mrSupply_3.3_2011.txt", sep="\t") #Supply
+U_ = pd.read_csv("mrUse_3.3_2011.txt", sep="\t") #Use
+Y_ = pd.read_csv("mrFinalDemand_3.3_2011.txt", sep="\t") # Final demand
+E_ = pd.read_csv("mrFactorInputs_3.3_2011.txt", sep="\t") # Factor inputs
 
-Be_ = pd.read_csv("SUTs/V3.3/mrEmissions_3.3_2011.txt", sep="\t") # Emissions
-YBe_ = pd.read_csv("SUTs/V3.3/mrFDEmissions_3.3_2011.txt", sep="\t") # Final demand emissions
+Be_ = pd.read_csv("mrEmissions_3.3_2011.txt", sep="\t") # Emissions
+YBe_ = pd.read_csv("mrFDEmissions_3.3_2011.txt", sep="\t") # Final demand emissions
  
-Br_ = pd.read_csv("SUTs/V3.3/mrResources_3.3_2011.txt", sep="\t") #Final demand resources
-YBr_ = pd.read_csv("SUTs/V3.3/mrFDResources_3.3_2011.txt", sep="\t") #Final demand resources
+Br_ = pd.read_csv("mrResources_3.3_2011.txt", sep="\t") #Final demand resources
+YBr_ = pd.read_csv("mrFDResources_3.3_2011.txt", sep="\t") #Final demand resources
 
-Bm_ = pd.read_csv("SUTs/V3.3/mrMaterials_3.3_2011.txt", sep="\t") # Materials
-YBm_ = pd.read_csv("SUTs/V3.3/mrFDMaterials_3.3_2011.txt", sep="\t") #Final demand materials
+Bm_ = pd.read_csv("mrMaterials_3.3_2011.txt", sep="\t") # Materials
+YBm_ = pd.read_csv("mrFDMaterials_3.3_2011.txt", sep="\t") #Final demand materials
 
 #==============================================================================
 # Clean mrSUT
@@ -53,14 +53,14 @@ YBm = YBm_.iloc[1:,2:].apply(pd.to_numeric) #Final demand materials
 # Load classifications
 # =============================================================================
 
-regions = pd.read_excel("resources/classifications3.0.13_3_dec_2016.xlsx", sheet_name= "countries")
-substances = pd.read_excel("resources/classifications3.0.13_3_dec_2016.xlsx", sheet_name= "substances")
-fact_inputs = pd.read_excel("resources/classifications3.0.13_3_dec_2016.xlsx", sheet_name= "factorinputtypes")
-final_demand = pd.read_excel("resources/classifications3.0.13_3_dec_2016.xlsx", sheet_name= "finaldemandtypes")
-materials = pd.read_excel("resources/classifications3.0.13_3_dec_2016.xlsx", sheet_name= "physicaltypes")
-resources = pd.read_excel("resources/classifications3.0.13_3_dec_2016.xlsx", sheet_name= "extractions")
-industries = pd.read_excel("resources/classifications3.0.13_3_dec_2016.xlsx", sheet_name= "industrytypes")
-products = pd.read_excel("resources/classifications3.0.13_3_dec_2016.xlsx", sheet_name= "producttypes")
+regions = pd.read_excel("classifications3.0.13_3_dec_2016.xlsx", sheet_name= "countries")
+substances = pd.read_excel("classifications3.0.13_3_dec_2016.xlsx", sheet_name= "substances")
+fact_inputs = pd.read_excel("classifications3.0.13_3_dec_2016.xlsx", sheet_name= "factorinputtypes")
+final_demand = pd.read_excel("classifications3.0.13_3_dec_2016.xlsx", sheet_name= "finaldemandtypes")
+materials = pd.read_excel("classifications3.0.13_3_dec_2016.xlsx", sheet_name= "physicaltypes")
+resources = pd.read_excel("classifications3.0.13_3_dec_2016.xlsx", sheet_name= "extractions")
+industries = pd.read_excel("classifications3.0.13_3_dec_2016.xlsx", sheet_name= "industrytypes")
+products = pd.read_excel("classifications3.0.13_3_dec_2016.xlsx", sheet_name= "producttypes")
 
 
 #==============================================================================
