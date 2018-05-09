@@ -2,9 +2,8 @@
 """
 Created on Tue Jan 31 07:56:46 2017
 
-Description: Populating and parsing from SUTs for later aggreggation
+Description: Parses EXIOBASE mrSUT V3.3 from CSV files, reconstructs all the labels and pickles everything 
 
-Scope: Modelling the Circular Economy in EEIO
 
 @author:Franco Donati
 @institution:Leiden University CML, TU Delft TPM

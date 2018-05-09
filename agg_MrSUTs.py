@@ -2,9 +2,7 @@
 """
 Created on Tue Jan 31 07:55:33 2017
 
-Description: 
-
-Scope: Modelling the Circular Economy in EEIO
+Description: Aggregates to EU and ROW previously pickled mrSUT Exiobase V3.3
 
 @author:Franco Donati
 @institution:Leiden University CML
