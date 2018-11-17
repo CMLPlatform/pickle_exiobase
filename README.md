@@ -1,5 +1,7 @@
 # pickle_exiobase
-[MIT](http://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](resources/docs/CONTRIBUTING.md)
+
 
 # Code for parsing and aggregating Exiobase V3.3 CSV .txt files into pickle
 Contains the following
